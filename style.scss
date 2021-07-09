@@ -1,0 +1,94 @@
+html[theme="light"]{
+    --background: white;
+    --background-button: #4e76cc;
+    --background-panel:#f5f5f547;
+    --facebook: #e8f6fe;
+    --github: #cedadc;
+    --discord: #dcdffb;
+    --messenger: #bfe6ff;
+    --instagram: #f7cbe0;
+    --reddit: #f5ae9b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--background-button);
+    margin: 10px;
+}
+
+.name{
+    text-align: center;
+  }
+
+.section{
+    margin-top: 30px;
+    padding: 10px;
+    .panel{
+        margin-top: 5px;
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--background-panel);
+    }
+    [role='btn']{
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .facebook{
+        background-color: var(--facebook)
+    }
+    .github{
+        background-color: var(--github)
+    }
+    .discord{
+        background-color: var(--discord)
+    }
+    .instagram{
+        background-color: var(--instagram)
+    }
+    .messenger{
+        background-color: var(--messenger)
+    }
+    .reddit{
+        background-color: var(--reddit)
+    }
+  }
+
+  #bio_link{
+      text-align: center;
+      input[type=text]{
+          margin-top: 15px;
+          height: 40px;
+          width: 100%;
+          border-radius: 20px;
+          border: none;
+          background-color: #e4f5ff;
+          padding: 0 15px 0 15px;
+          font-family: 'Maven Pro', sans-serif;
+          font-weight: 700;
+          box-sizing: border-box;
+          color: #4e76cc;
+          text-align: center;
+          &:focus{
+              outline: none;
+          }
+          &:hover{
+              background-color: #bfe6ff;
+          }
+      }
+  }
